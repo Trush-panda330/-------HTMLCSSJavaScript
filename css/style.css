@@ -5,8 +5,18 @@ h1 {
     margin: 0;
 }
 div.content {
+    /* 色はmdn web docsで検索すると良いかも */
+    /* rgb(0,0,255);のように光の三原色を使って指定する方法もある */
+    /* #000000;って感じでも色の指定ができる */
     background-color: #fcc;
     width: 600px;
+    margin: 0 auto;
+    /* margin: 10px 20px 20px 10px 上右左下;
+    margin: 10px 20px 上下　左右;というような指定もできる */
+    border: 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d1d1d1;
 }
 p {
     font-size: 14px;
