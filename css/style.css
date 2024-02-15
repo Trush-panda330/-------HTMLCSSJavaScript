@@ -1,22 +1,25 @@
 @import url(sanitize.css);
-
+body {
+    background-color: #fafafa;
+}
 h1 {
     font-size: 24px;
     margin: 0;
 }
 div.content {
+    background-color: #fff;
     /* 色はmdn web docsで検索すると良いかも */
     /* rgb(0,0,255);のように光の三原色を使って指定する方法もある */
     /* #000000;って感じでも色の指定ができる */
     width: 600px;
-    margin: 0 auto;
+    margin: 10px auto;
     /* margin: 10px 20px 20px 10px 上右左下;
     margin: 10px 20px 上下　左右;というような指定もできる */
     border: 1px;
     border-width: 1px;
     border-style: solid;
     border-color: #d1d1d1;
-    padding: 8px;
+    padding: 30px;
     /* 余白について
     要素の内側がpadding 外側がmargin */
 }
@@ -44,4 +47,15 @@ label {
     display: block;
     margin-bottom: .5em;
     /* emというのは文字に対しての比率。margin 0.5だと文字の半分の余白を作るということ */
+}
+/* ここのspan.requiredは.requiredと省略できる。
+　　前述のdiv.contentも同じく.contentで良い */
+span.required {
+    background-color: #fee;
+    color: #f33;
+    padding: 3px;
+    font-size: .8em;
+    font-weight: bold;
+    /* font-weight は文字の強調 */
+    margin-left: .3em;
 }
