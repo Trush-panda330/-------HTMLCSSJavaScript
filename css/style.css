@@ -8,7 +8,6 @@ div.content {
     /* 色はmdn web docsで検索すると良いかも */
     /* rgb(0,0,255);のように光の三原色を使って指定する方法もある */
     /* #000000;って感じでも色の指定ができる */
-    background-color: #fcc;
     width: 600px;
     margin: 0 auto;
     /* margin: 10px 20px 20px 10px 上右左下;
@@ -17,7 +16,26 @@ div.content {
     border-width: 1px;
     border-style: solid;
     border-color: #d1d1d1;
+    padding: 8px;
+    /* 余白について
+    要素の内側がpadding 外側がmargin */
 }
-p {
-    font-size: 14px;
+input {
+    border: none;
+    border-bottom: 1px solid #d1d1d1;
+    font-size: 16px;
+    /* font-size: 16px以上にするのは決まり文句
+    iPhoneで表示したときに画面が拡大してしまう不具合があるらしい */
+    padding: 8px;
+}
+button {
+    width: 100%;
+    background-color: #2096f3;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 3px; 
+    /* border-radius: ;は角の丸みの設定をするもの数値が高いほどまん丸 */
+    box-shadow: 0 0 8px rgba(0, 0, 0, .4);
+    /* box-shadow: 0(縦) 0(横) 8(ぼけ具合) rgba(0(r赤),0(g緑), 0(b青),　.4(ぼけの透明度)); */
 }
